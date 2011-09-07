@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Diffusion.Create DWI Atlas</category>
+  <title>Average DWI's</title>
+  <description></description>
+  <version>0.1.0.$Revision: 8595 $(alpha)</version>
+  <documentation-url>http://www.slicer.org/slicerWiki/index.php/Modules:</documentation-url>
+  <license></license>
+  <contributor></contributor>
+  <acknowledgements></acknowledgements>
+
+  <parameters>
+    <label>IO</label>
+    <description>Input/output parameters</description>
+    <file multiple="true">
+        <name>volumeFileNames</name>
+        <longflag>volumeFileNames</longflag>
+        <description>File names.</description>
+        <label>DWI's from which to create average DWI</label>      
+        <channel>input</channel>
+      </file>
+    <image type="diffusion-weighted">                                                                                                                                                                                                    
+       <name>outputVolume</name>
+       <label>Output Volume</label>
+       <channel>output</channel>
+       <index>1</index>
+       <description>Output DWI volume.</description>
+     </image>
+  </parameters>
+
+</executable>
