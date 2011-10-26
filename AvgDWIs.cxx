@@ -199,10 +199,10 @@ int main( int argc, char * argv[] )
      break;
    #endif
    case itk::ImageIOBase::FLOAT:
-     std::cout << "FLOAT type not currently supported." << std::endl;
+     return ComputeMean( volumeFileNames, outputVolume.c_str(), static_cast<float>(0));
      break;
    case itk::ImageIOBase::DOUBLE:
-     std::cout << "DOUBLE type not currently supported." << std::endl;
+     return ComputeMean( volumeFileNames, outputVolume.c_str(), static_cast<double>(0));
      break;
    case itk::ImageIOBase::UNKNOWNCOMPONENTTYPE:
    default:
